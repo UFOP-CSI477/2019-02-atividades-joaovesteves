@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="br" dir="">
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+</head>
+<body>
+	<h1>Cadastro do Produto</h1>
+
+	<form method="post" action="cadastro_produto.html">
+		<label for="nome">Nome:</label>
+		<input type="text" name="nome" id="nome" placeholder="Nome do produto">
+
+		<br>
+		<br>
+
+		<label for="peso">Peso:</label>
+		<input type="text" name="peso" id="peso" placeholder="Peso">
+
+		<br>
+		<br>
+
+		<label>Unidade de medida:</label>
+		
+		<br>
+
+		<input type="radio" name="um" id="mg" value="Mg">
+		<label for="mg">Miligrama</label>
+		
+		<input type="radio" name="um" id="g" value="G">
+		<label for="g">Grama</label>
+		
+		<input type="radio" name="um" id="kg" value="Kg">
+		<label for="kg">Kilograma</label>
+
+		<input type="radio" name="um" id="t" value="T">
+		<label for="t">Tonelada</label>
+
+		<br>
+		<br>
+
+		<label for="valor">Valor:</label>
+		<input type="text" name="valor" id="valor" placeholder="Valor do produto em reais">
+
+		<br>
+		<br>
+
+		<label for="estoque">Estoque inicial:</label>
+		<input type="tex" name="estoque" id="estoque" placeholder="Quantidade em estoque">
+
+		<br>
+		<br>
+
+		<label>Mercado:</label>
+
+		<br>
+
+		<input type="radio" name="mercado" id="interno" value="I">
+		<label for="interno">Interno</label>
+
+		<br>
+
+		<input type="radio" name="mercado" id="externo" value="E">
+		<label for="externo">Externo</label>
+
+		<br>
+		<br>
+
+		<label for="fornecedor">Fornecedor:</label>
+		<select name="fornecedor" id="fornecedor">
+			<option disabled selected="" value="0"></option>
+			<option value="1">Fornecedor 1</option>
+			<option value="2">Fornecedor 2</option>
+			<option value="3">Fornecedor 3</option>
+			<option value="4">Fornecedor 4</option>
+			<option value="5">Fornecedor 5</option>
+		</select>
+
+		<br>
+		<br>
+
+		<input type="submit" name="cadastro" value="Cadastrar">
+		<input type="reset" name="limpar" value="Limpar">
+	</form>
+
+	<br>
+
+	<a href="menu.html">Voltar a página inicial</a>
+
+</body>
+</html>

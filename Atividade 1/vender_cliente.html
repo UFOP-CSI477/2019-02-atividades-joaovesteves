@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Vendas</title>
+</head>
+<body>
+	<h1>Realizar venda</h1>
+
+	<form method="post" action="vender_cliente.html">
+
+		<label for="cliente">Cliente:</label>
+
+		<select name="cliente" id="cliente">
+			<option disabled selected="" value="0"></option>
+			<option value="1">João Vitor</option>
+			<option value="2">Maria</option>
+			<option value="3">Carlos</option>
+			<option value="4">Marina</option>
+			<option value="5">Beatriz</option>
+			
+		</select>
+
+		<label for="produto">Produto:</label>
+		<select name="produto" id="produto">
+			<option disabled selected="" value="0"></option>
+			<option value="1">Geladeira</option>
+			<option value="2">Fogão</option>
+			<option value="3">Sofá</option>
+			<option value="4">Notebook</option>
+			<option value="5">Televisão</option>
+		</select>
+
+		<br>
+		<br>
+
+		<input type="submit" name="vender" value="Vender">
+		<input type="reset" name="limpar" value="Limpar">
+
+	</form>
+
+	<br>
+
+	<a href="menu.html">Voltar a página inicial</a>
+
+</body>
+</html>
