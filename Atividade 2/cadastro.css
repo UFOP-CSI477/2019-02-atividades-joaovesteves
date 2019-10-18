@@ -1,0 +1,21 @@
+html {
+	margin-left: 35%;
+	margin-right: 25%;
+}
+
+input {
+	width: 100%
+	padding: 10px;
+	border: 0.5px solid blue;
+	border-radius: 1px;
+}
+
+label {
+	font-family: arial;
+	font-size: 15pt;
+}
+
+.controle {
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+}

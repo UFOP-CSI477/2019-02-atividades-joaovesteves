@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="br" dir="">
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="cadastro.css">
+	<link rel="stylesheet" type="text/css" href="menu-css">
+</head>
+<body>
+	<h1>Cadastro do Produto</h1>
+
+	<form method="post" action="cadastro_produto.html">
+		<div class="controle">
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome" id="nome" placeholder="Nome do produto">
+		</div>
+
+		<div class="controle">
+			<label for="peso">Peso:</label>
+			<input type="text" name="peso" id="peso" placeholder="Peso">
+		</div>
+
+		<div class="controle">
+		<label>Unidade de medida:</label>
+
+			<br>
+
+			<input type="radio" name="um" id="mg" value="Mg">
+			<label for="mg">Miligrama</label>
+			
+			<input type="radio" name="um" id="g" value="G">
+			<label for="g">Grama</label>
+			
+			<input type="radio" name="um" id="kg" value="Kg">
+			<label for="kg">Kilograma</label>
+
+			<input type="radio" name="um" id="t" value="T">
+			<label for="t">Tonelada</label>
+		</div>
+
+		<div class="controle">
+			<label for="valor">Valor:</label>
+			<input type="text" name="valor" id="valor" placeholder="Valor do produto em reais">
+		</div>
+
+		<div class="controle">
+			<label for="estoque">Estoque inicial:</label>
+			<input type="tex" name="estoque" id="estoque" placeholder="Quantidade em estoque">
+		</div>
+
+		<div class="controle">
+			<label>Mercado:</label>
+
+			<br>
+
+			<input type="radio" name="mercado" id="interno" value="I">
+			<label for="interno">Interno</label>
+
+			<input type="radio" name="mercado" id="externo" value="E">
+			<label for="externo">Externo</label>
+		</div>
+
+		<div class="controle">
+			<label for="fornecedor">Fornecedor:</label>
+			<select name="fornecedor" id="fornecedor">
+				<option disabled selected="" value="0"></option>
+				<option value="1">Fornecedor 1</option>
+				<option value="2">Fornecedor 2</option>
+				<option value="3">Fornecedor 3</option>
+				<option value="4">Fornecedor 4</option>
+				<option value="5">Fornecedor 5</option>
+			</select>
+		</div>
+
+		<br>
+		<br>
+
+		<input type="submit" name="cadastro" value="Cadastrar">
+		<input type="reset" name="limpar" value="Limpar">
+	</form>
+
+	<a href="menu-css.html">Voltar a página inicial</a>
+
+</body>
+</html>

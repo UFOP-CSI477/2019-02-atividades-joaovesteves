@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de cliente</title>
+	<link rel="stylesheet" type="text/css" href="cadastro.css">
+	<link rel="stylesheet" type="text/css" href="menu-css">
+</head>
+<body>
+	<h1>Dados do Cadastro</h1>
+
+	<form method="post" action="cadastro_cliente.html">
+
+		<div class="controle">	
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome" id="nome" placeholder="Nome do cliente">
+		</div>
+		
+		<div class="controle">
+			<label for="endereço">Endereço:</label>
+			<input type="text" name="endereço" id="endereço" placeholder="Endereço">
+		</div>
+		
+		<div class="controle">
+			<label for="email">E-mail:</label>
+			<input type="text" name="email" id="email" placeholder="E-mail">
+		</div>
+
+		<div class="controle">
+			<label for="data">Data de nascimento:</label>
+			<input type="date" name="data" id="data">
+		</div>
+
+		<div class="controle">
+			<label>Sexo:</label>
+
+			<br>
+
+			<input type="radio" name="genero" id="masculino" value="M">
+			<label for="masculino">Masculino</label>
+
+			<br>
+
+			<input type="radio" name="genero" id="feminino" value="F">
+			<label for="feminino">Feminino</label>
+		</div>
+
+		<br>
+		<br>
+
+		<input type="submit" name="cadastro" value="Enviar">
+		<input type="reset" name="limpar" value="Limpar">
+
+	</form>
+
+	<br>
+	
+	<a href="menu-css.html">Voltar a página inicial</a>
+
+
+</body>
+</html>

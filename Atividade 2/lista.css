@@ -1,0 +1,36 @@
+table {
+	width: 100%
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px
+}
+
+th {
+	font-size: 13pt;
+	font-family: monospace;
+}
+
+tbody tr:hover {
+	background-color: lightgray;
+}
+
+thead tr:hover {
+	background-color: blue;
+}
+
+tfoot tr:hover {
+	background-color: red;
+	font-weight: bold;
+}
+
+.destaque {
+	font-size: 18pt;
+	color: black;
+	text-align: center;
+}

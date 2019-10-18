@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Vendas</title>
+	<link rel="stylesheet" type="text/css" href="cadastro.css">
+	<link rel="stylesheet" type="text/css" href="menu-css">
+</head>
+<body>
+	<h1>Realizar venda</h1>
+
+	<form method="post" action="vender_cliente.html">
+
+		<div class="controle">
+			<label for="cliente">Cliente:</label>
+
+			<select name="cliente" id="cliente">
+				<option disabled selected="" value="0"></option>
+				<option value="1">João Vitor</option>
+				<option value="2">Maria</option>
+				<option value="3">Carlos</option>
+				<option value="4">Marina</option>
+				<option value="5">Beatriz</option>
+			
+			</select>
+		</div>
+
+		<div class="controle">
+			<label for="produto">Produto:</label>
+			<select name="produto" id="produto">
+				<option disabled selected="" value="0"></option>
+				<option value="1">Geladeira</option>
+				<option value="2">Fogão</option>
+				<option value="3">Sofá</option>
+				<option value="4">Notebook</option>
+				<option value="5">Televisão</option>
+			</select>
+		</div>
+
+		<div class="controle">
+			<label for="quantidade">Quantidade:</label>
+			<input type="text" name="quantidade" id="quantidade">
+		</div>
+
+		<div class="controle">
+			<label>Forma de pagamento:</label>
+
+			<br>
+
+			<input type="radio" name="fp" id="dinheiro" value="D">
+			<label for="dinheiro">Dinheiro</label>
+
+			<input type="radio" name="fp" id="cartao" value="C">
+			<label for="cartao">Cartão</label>
+		</div>
+
+		<br>
+		<br>
+
+
+		<input type="submit" name="vender" value="Vender">
+		<input type="reset" name="limpar" value="Limpar">
+
+	</form>
+
+	<br>
+
+	<a href="menu-css.html">Voltar a página inicial</a>
+
+</body>
+</html>
