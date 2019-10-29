@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>IMC</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="calcula.js"></script>
+	<link rel="stylesheet" type="text/css" href="principal.css">
+</head>
+<body>	
+	<div class="container">
+		<div class="jumbotron" style="background-color: lightgreen;">
+			<h1>Cálculo IMC</h1>
+		</div>
+
+		<p>Informe seus dados para calcular o seu IMC:</p>
+		
+		<form name="dados">	
+			<div class="form-group">
+				<label for="peso" id="label1">Peso:</label>
+				<input type="number" name="peso" id="peso" placeholder="Digite seu peso (Ex.: 75)" class="form-control" value="">
+
+				<div id="alerta1" class="alert alert-danger" style="display: none;">
+					<span>Digite um peso correto</span>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="altura" id="label2">Altura:</label>
+				<input type="number" name="altura" id="altura" placeholder="Digite sua altura (Ex.: 1.86)" class="form-control" value="">
+
+				<div id="alerta2" class="alert alert-danger" style="display: none;">
+					<span>Digite uma altura correta</span>
+				</div>
+			</div>
+
+			<h3>Resultados:</h3>
+
+			<div id="imc" class="form-group">
+				<label for="imc" id="label3">IMC:</label>
+				<input type="text" name="imc" id="imc" value="" class="form-control" disabled="disabled">
+			</div>
+
+			<div id="classificação" class="form-group">
+				<label for="classificação" id="label4">Classificação:</label>
+				<input type="text" name="classificação" id="classificação" value="" class="form-control" disabled="disabled">
+			</div>
+
+			<div id="pesoIdeal" class="form-group">
+				<label for="pesoIdeal">Peso Ideal:</label>
+				<input type="text" name="pesoIdeal" id="pesoIdeal" value="" class="form-control" disabled="disabled">
+			</div>
+
+			<input type="button" value="Calcular" onclick="calcular()" class="btn btn-primary">
+			<input type="reset" value="Limpar" class="btn btn-warning">
+		</form>
+	</div>
+</body>
+</html>

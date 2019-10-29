@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Competição de carrinhos de rolimã</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="resultado.js"></script>
+	<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+	<div class="jumbotron jumbotron-fluid" style="background-color: lightblue; height: 115pt">
+		<h1>Corrida de rolimã</h1>
+	</div>
+
+	<div class="container body" >
+
+		<p id="p">Insira os dados dos competidores:</p>
+
+		<form name="dados">
+			<div class="form-group" id="div1">
+				<label for="largada" id="label1">Posição de largada:</label>
+				<input type="number" name="largada" id="largada" value="" class="form-control">
+
+				<div id="alerta1" class="alert alert-danger" style="display: none;">
+					<span>Campo incorreto</span>
+				</div>
+			</div>
+
+			<div class="form-group" id="div2">
+				<label for="nome" id="label2">Nome do corredor(a):</label>
+				<input type="text" name="nome" id="nome" value="" class="form-control">
+
+				<div id="alerta2" class="alert alert-danger" style="display: none;">
+					<span>Campo incorreto</span>
+				</div>
+			</div>
+
+			<div class="form-group" id="div3">
+				<label for="tempo" id="label3">Tempo(s):</label>
+				<input type="number" name="tempo" id="tempo" value="" class="form-control">
+
+				<div id="alerta3" class="alert alert-danger" style="display: none;">
+					<span>Campo incorreto</span>
+				</div>
+			</div>
+			<div id="div4">
+				<input type="button" value="Cadastrar" class="btn btn-success" onclick="inserir('tabelaDados')" id="button1">
+				<input type="button" value="Resultado" onclick="ordena()" class="btn btn-primary" id="button2">
+				<input type="reset" value="Limpar" class="btn btn-warning">
+			</div>
+
+			<br>
+			
+			<table class="table table-hover table-bordered" id="tabela">
+
+				<caption>Dados parciais</caption>
+
+				<thead class="thead-dark">
+					<tr>
+						<th>Posição de Largada</th>
+						<th>Competidor(a)</th>
+						<th>Tempo(s)</th>
+					</tr>
+				</thead>
+				<tbody id="tabelaDados">
+				</tbody>
+			</table>
+			<table class="table table-hover table-bordered" id="tabelaResultado" style="display: none;">
+
+				<caption>Dados finais</caption>
+
+				<thead class="thead-dark">
+					<tr>
+						<th>Posição Final</th>
+						<th>Posição de Largada</th>
+						<th>Competidor(a)</th>
+						<th>Tempo(s)</th>
+						<th>Resultado</th>
+					</tr>
+				</thead>
+				<tbody id="dadosResultado">
+				</tbody>
+			</table>
+
+			<a href="menu.html" style="display: none;" id="a">Voltar a página inicial</a>
+
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Escala Richter</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="calculaEscala.js"></script>
+	<link rel="stylesheet" type="text/css" href="escala.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="jumbotron" style="background-color: lightgray;">
+			<h1>Escala Richter</h1>
+		</div>
+
+		<p>Preencha os dados: </p>
+
+		<form name="dados">
+			<div class="form-group">
+				<label for="amplitude" id="label1">Amplitude:</label>
+				<input type="number" name="amplitude" id="amplitude" placeholder="Amplitude em mm" class="form-control" value="">
+
+				<div id="alerta1" class="alert alert-danger" style="display: none;">
+					<span>Campo incorreto</span>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="intervalo" id="label2">Intervalo de tempo (Δt):</label>
+				<input type="number" name="intervalo" id="intervalo" placeholder="Tempo entre onda superficial e a onda máxima" class="form-control" value="">
+
+				<div id="alerta2" class="alert alert-danger" style="display: none;">
+					<span>Campo incorreto</span>
+				</div>
+			</div>
+
+			<input type="button" value="Calcular" onclick="calcular()" class="btn btn-primary">
+			<input type="button" value="Limpar" class="btn btn-warning" onclick="limpar()">
+
+			<br>
+			<br>
+
+			<div class="form-group">
+				<label for="mag" id="label2">Magnitude:</label>
+				<input type="text" name="mag" id="mag" class="form-control" value="" disabled="disabled">
+
+				<div id="alerta3" style="display: none;" class="alert alert-success">	
+					<span>Efeito: Geralmente não sentido, mas gravado.</span>
+				</div>
+
+				<div id="alerta4" style="display: none;" class="alert alert-success">	
+					<span>Efeito: Ás vezes sentido, mas raramente causa danos.</span>
+				</div>
+
+				<div id="alerta5" style="display: none;" class="alert alert-warning">	
+					<span>Efeito: Causa pequenos danos a prédios bem construídos, mas danifica seriamente casas mal construídas em regiões próximas.</span>
+				</div>
+
+				<div id="alerta6" style="display: none;" class="alert alert-warning">	
+					<span>Efeito: Pode ser destrutivo em áreas em torno de até 100km do epicentro.</span>
+				</div>
+
+				<div id="alerta7" style="display: none;"class="alert alert-danger">	
+					<span>Efeito: Grande terremoto. Pode causar sérios danos numa grande faixa.</span>
+				</div>
+
+				<div id="alerta8" style="display: none;"class="alert alert-danger">	
+					<span>Efeito: Enorme terremoto. Pode causar graves danos em muitas áreas mesmo que estejam a centenas de quilômetros.</span>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
