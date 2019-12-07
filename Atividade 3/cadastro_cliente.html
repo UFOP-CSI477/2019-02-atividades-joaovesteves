@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de cliente</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+</head>
+<body>
+	<h1>Dados do Cadastro</h1>
+
+	<form method="post" action="cadastro_cliente.html">
+
+		<div class="form-group" >	
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome" id="nome" placeholder="Nome do cliente" class="form-control">
+		</div>
+		
+		<div class="form-group">
+			<label for="endereço">Endereço:</label>
+			<input type="text" name="endereço" id="endereço" placeholder="Endereço" class="form-control">
+		</div>
+		
+		<div class="form-group">
+			<label for="email">E-mail:</label>
+			<input type="text" name="email" id="email" placeholder="E-mail" class="form-control">
+		</div>
+
+		<div class="form-group">
+			<label for="data">Data de nascimento:</label>
+			<input type="date" name="data" id="data" class="form-control">
+		</div>
+
+		<label>Sexo:</label>
+
+		<div class="form-check">
+
+			<input type="radio" name="genero" id="masculino" value="M" class="form-check-input">
+			<label for="masculino" class="form-check-label">Masculino</label>
+
+			<br>
+
+			<input type="radio" name="genero" id="feminino" value="F" class="form-check-input">
+			<label for="feminino" class="form-check-label">Feminino</label>
+		</div>
+
+		<br>
+		<br>
+
+		<input type="submit" name="cadastro" value="Enviar" class="btn btn-success">
+		<input type="reset" name="limpar" value="Limpar" class="btn btn-warning">
+
+	</form>
+
+	<br>
+	
+	<a href="menu.html" class="btn btn-primary">Voltar a página inicial</a>
+
+
+</body>
+</html>

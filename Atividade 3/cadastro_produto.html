@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="br" dir="">
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+</head>
+<body>
+	<h1>Cadastro do Produto</h1>
+
+	<form method="post" action="cadastro_produto.html">
+		<div class="form-group">
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome" id="nome" placeholder="Nome do produto" class="form-control">
+		</div>
+
+		<div class="form-group">
+			<label for="peso">Peso:</label>
+			<input type="text" name="peso" id="peso" placeholder="Peso" class="form-control">
+		</div>
+
+		<label>Unidade de medida:</label>
+
+		<div class="form-check">
+			<div>
+				<input type="radio" name="um" id="mg" value="Mg" class="form-check-input">
+				<label for="mg" class="form-check-label">Miligrama</label>
+			</div>
+
+			<div>
+				<input type="radio" name="um" id="g" value="G" class="form-check-input">
+				<label for="g" class="form-check-label">Grama</label>
+			</div>
+
+			<div>
+				<input type="radio" name="um" id="kg" value="Kg" class="form-check-input">
+				<label for="kg" class="form-check-label">Kilograma</label>
+			</div>
+
+			<div>
+				<input type="radio" name="um" id="t" value="T" class="form-check-input">
+				<label for="t" class="form-check-label">Tonelada</label>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="valor">Valor:</label>
+			<input type="text" name="valor" id="valor" placeholder="Valor do produto em reais" class="form-control">
+		</div>
+
+		<div class="form-group">
+			<label for="estoque">Estoque inicial:</label>
+			<input type="tex" name="estoque" id="estoque" placeholder="Quantidade em estoque" class="form-control">
+		</div>
+
+		<label>Mercado:</label>
+
+		<div class="form-check">
+			<div>
+				<input type="radio" name="mercado" id="interno" value="I" class="form-check-input">
+				<label for="interno" class="form-check-label">Interno</label>
+			</div>
+
+			<div>
+				<input type="radio" name="mercado" id="externo" value="E" class="form-check-input">
+				<label for="externo" class="form-check-label">Externo</label>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="fornecedor">Fornecedor:</label>
+			<select name="fornecedor" id="fornecedor" class="custom-select">
+				<option disabled selected="" value="0"></option>
+				<option value="1">Fornecedor 1</option>
+				<option value="2">Fornecedor 2</option>
+				<option value="3">Fornecedor 3</option>
+				<option value="4">Fornecedor 4</option>
+				<option value="5">Fornecedor 5</option>
+			</select>
+		</div>
+
+
+		<input type="submit" name="cadastro" value="Cadastrar" class="btn btn-success">
+		<input type="reset" name="limpar" value="Limpar" class="btn btn-warning">
+	</form>
+
+	<br>
+
+	<a href="menu.html" class="btn btn-primary">Voltar a página inicial</a>
+
+</body>
+</html>
