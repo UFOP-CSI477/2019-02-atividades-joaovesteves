@@ -1,0 +1,1 @@
+Na realização desta atividade foi utilizado como base para ajuda, os projetos desenvolvidos em sala de aula. E também me reuni com os colegas de turma, Higor Luís, Gabriel Batista e o Gabriel Nepomuceno, este também me auxiliou em algumas coisas na atividade prática
